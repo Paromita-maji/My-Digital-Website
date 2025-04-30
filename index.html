@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Service Website</title>
+
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="images/x-icon">
+
+    <link rel="stylesheet" href="css/style.css" class="css">
+
+    <link rel="stylesheet" href="css/easy.css" class="css">
+    <link rel="stylesheet" href="css/responsive.css" class="css">
+
+    <link rel="stylesheet" href="css/slick.min.css" class="css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--font awesome cdn for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <div class="header-index">
+
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+
+                        <a href="/" class="navbar-logo"><img src="Images/logo.png" alt=""></a>
+                        <button onclick="openNav()" class="navbar-toggler" type="button">
+                            <span  class="fa-solid fa-bars"></span>
+                        </button>
+
+                        <!--menu-->
+                        <ul class="navbar-nav flex">
+                            <li><a href="/" class="nav-link active">Home</a></li>
+                            <li><a href="/" class="nav-link">About</a></li>
+                            <li><a href="/" class="nav-link">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="/" class="nav-link dropdown-toggle">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/" class="dropdown-item">Services</a></li>
+                                    <li><a href="/" class="dropdown-item">Pricing Plan</a></li>
+                                    <li><a href="/" class="dropdown-item">Portfolio</a></li>
+                                    <li><a href="/" class="dropdown-item">Team</a></li>
+                                    <li><a href="/" class="dropdown-item">Testimonials</a></li>
+                                    <li><a href="/" class="dropdown-item">FAQ</a></li>
+                                    <li><a href="/" class="dropdown-item">Blog</a></li>
+                                    <li><a href="/" class="dropdown-item">Coming Soon</a></li>
+                                    <li><a href="/" class="dropdown-item">404</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-right flex">
+                        <p>Call Us: <span>+123 456 7890</span></p>
+                        <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                        <button id="hamburger-button" class="fa-solid fa-bars"></button>
+                    </div>
+                </nav>
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="Images/logo.png" alt="logo"></a>
+                        <button onclick="closeNav()" type="button" class="closebtn btn_hover1">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="/" class="nav-link active">Home</a></li>
+                            <li><a href="/" class="nav-link">About</a></li>
+                            <li><a href="/" class="nav-link">Contact</a></li>
+                            <li class="pages"><a href="/">More</a></li>
+                            <li class="collapse-btn">
+                                <a href="" class="nav-link plus_collapse" data-bs-toggle="collapse">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a href="" class="nav-link">Services</a></li>
+                                        <li><a href="/" class="nav-link">Pricing Plan</a></li>
+                                        <li><a href="/" class="nav-link">Portfolio</a></li>
+                                        <li><a href="/" class="nav-link">Team</a></li>
+                                        <li><a href="/" class="nav-link">Testimonials</a></li>
+                                        <li><a href="/" class="nav-link">FAQ</a></li>
+                                        <li><a href="/" class="nav-link">Blog</a></li>
+                                        <li><a href="/" class="nav-link">Coming Soon</a></li>
+                                        <li><a href="/" class="nav-link">404</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </aside>
+
+                <div id="search-bar">
+                    <div onclick="close_search()" class="btn-hover1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form action="#" method="search">
+                        <input type="search" required placeholder="Search...">
+                        <button type="submit" class="btn_hover1">Search</button>
+                    </form>
+                </div>
+
+                
+
+                <section class="header-right-sidebar" id="right-side">
+                    <div class="flex flex-sb">
+                        <a href="/"><img src="Images/right-side-logo.png" alt="logo"></a>
+                        <button class="close_rightsidebar fa-solid fa-xmark"></button>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis necessitatibus voluptatibus
+                        ad accusamus iste cumque corrupti rem repellendus tempora ex?</p>
+                    <a href="" class="btn_hover1">Discover More</a>
+                    <hr>
+                    <h4>Connect Details</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="#" class="text-lowercase">paromita@gmail.com </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#">+123-456-7890</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-regular fa-clock"></i></a>
+                            <a href="#">Office Hours: 8AM - 11PM Sunday - Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkdin"></i></a>
+                    </span>
+                </section>
+            </header>
+
+            <section class="hero">
+                <div class="container" data-aos="zoom-in">
+                    <div class="hero-social-icon flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="center-data flex flex-col gap-1">
+                        <h1>DIGITAL SERVICES</h1>
+                        <h3>BUILDING YOUR EMPIRE DIGITALLY</h3>
+                        <div class="center-btn flex gap-15 mt-1">
+                            <a href="/" class="btn_hover1">Get Started</a>
+                            <a href="/" class="btn_hover1">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <section class="feature">
+            <div class="container">
+                <div class="flex">
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure>
+                                <img class="figure_img1" src="Images/icon/feature1.png" alt="img">
+                            </figure>
+                            <h4>CUSTOMIZED SOLUTIONS</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod eos quia, unde
+                                similique maxime incidunt tenetur explicabo.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="Images/icon/feature2.png" alt="img">
+                            </figure>
+                            <h4>ROI-DRIVEN APPROACH</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod eos quia, unde
+                                similique maxime incidunt tenetur explicabo.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure>
+                                <img src="Images/icon/feature3.png" alt="img">
+                            </figure>
+                            <h4>CREATIVED SOLUTION</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod eos quia, unde
+                                similique maxime incidunt tenetur explicabo.</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="Images/icon/feature4.png" alt="img">
+                            </figure>
+                            <h4>EXPERT TEAM</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod eos quia, unde
+                                similique maxime incidunt tenetur explicabo.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logoipsum">
+            <div class="container">
+                <div class="flex flex-col gap-2">
+                    <div class="hr1">
+                        <h3 class="mb-15" data-aos="zoom-in">OUR CLIENTS</h3>
+                    </div>
+                    <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
+                        <figure><img src="Images/home/logoipsum1.svg" alt="logoipsum"></figure>
+                        <figure><img src="Images/home/logoipsum2.svg" alt="logoipsum"></figure>
+                        <figure><img src="Images/home/logoipsum3.svg" alt="logoipsum"></figure>
+                        <figure><img src="Images/home/logoipsum4.svg" alt="logoipsum"></figure>
+                        <figure><img src="Images/home/logoipsum5.svg" alt="logoipsum"></figure>
+                        <figure><img src="Images/home/logoipsum6.svg" alt="logoipsum"></figure>
+                    </div>
+                    <hr class="hr2">
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-data flex-sb">
+                    <div class="w-50" data-aos="fade-up">
+                        <div class="flex about-title gap-1">
+                            <hr>
+                            <h5>ABOUT US</h5>
+                        </div>
+                        <h2>Explore our services and boost your online presence</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt similique neque sed
+                            perspiciatis corporis eveniet ex ducimus rerum consectetur explicabo ipsum, reiciendis eius
+                            deserunt voluptates eaque a animi dolores distinctio, dolorem atque illo temporibus omnis!
+                            Ipsum eveniet provident ducimus eligendi culpa dicta, animi exercitationem hic? Ad rerum
+                            aliquam earum distinctio.</p>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis.</h5>
+                        </div>
+
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis.</h5>
+                        </div>
+
+                        <div class="flex mt-3 gap-20">
+                            <a href="#" class="btn_hover1">Get Started</a>
+                            <a href="#" class="btn_hover2">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="w-50 about-imgs flex flex-center" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="Images/home/about.png" alt="img">
+                            </figure>
+                        </div>
+                        <div class="ab-count flex flex-center">
+                            <div class="flex flex-center">
+                                <h2>12</h2>
+                                <h2>+</h2>
+                            </div>
+                            <p>year of experience</p>
+                        </div>
+                        <div class="about-hr flex gap-1">
+                            <hr>
+                            <h6>Who we are</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="portfolio-1">
+                <div class="container">
+                    <div class="porto-center" data-aos="fade-up">
+                        <div class="w-50">
+                            <div class="flex gap-1">
+                                <hr class="gallary-hr1">
+                                <h5>PORTFOLIO</h5>
+                            </div>
+                            <h2 class="mt-15">Our Latest Projects</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ad omnis excepturi
+                                tenetur laboriosam incidunt!</p>
+                        </div>
+                        <div class="flex w-100 flex-end">
+                            <a href="/" class="btn_hover2">View All Projects</a>
+                        </div>
+                        <hr class="mt-3">
+
+                    </div>
+                </div>
+            </div>
+            <div class="gallary">
+                <div class="ga-bg">
+
+                </div>
+                <span> </span>
+                <div class="container" data-aos="fade-up">
+                    <div class="tab mt-15">
+                        <button class="tablinks active" onclick="open_img(event, 'all')">All</button>
+                        <button class="tablinks" onclick="open_img(event, 'design')">DESIGN</button>
+                        <button class="tablinks" onclick="open_img(event, 'development')">DEVELOPMENT</button>
+                        <button class="tablinks" onclick="open_img(event, 'branding')">BRANDING</button>
+                        <button class="tablinks" onclick="open_img(event, 'ui_ux')">UI/UX</button>
+                        <button class="tablinks" onclick="open_img(event, 'marking')">MARKETING</button>
+                        <button class="tablinks" onclick="open_img(event, 'seo')">SEO</button>
+                    </div>
+                    <div id="all" class="tabcontent" style="display: block;">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/all-gallary-1.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/all-gallary-2.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/all-gallary-3.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/all-gallary-4.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/all-gallary-5.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-6.png" alt="sm_img"></figure></div>
+                                    <div   <figure> <img src="images/home/all-gallary-7.png" alt="sm_img"></figure>
+                                </div>
+
+                                <div class="w-66">
+                                    <figure>
+                                        <img src="images/home/all-gallary-8.png" alt="img">
+                                    </figure>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="design" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/design-gallary-3.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/design-gallary-6.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/design-gallary-7.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/design-gallary-1.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/design-gallary-2.png" alt="img">
+                                    </figure>
+                                </div>
+
+
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/design-gallary-4.png" alt="img">
+                                    </figure>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="development" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/dev-gallary-3.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/dev-gallary-4.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/dev-gallary-5.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/dev-gallary-6.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/dev-gallary-7.png" alt="img">
+                                    </figure>
+                                </div>
+
+
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/dev-gallary-8.png" alt="img">
+                                    </figure>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="branding" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/brand-gallary-6.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-66">
+                                    <figure>
+                                        <img src="images/home/brand-gallary-8.png" alt="img">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ui_ux" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/ui-ux-gallary-3.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-66">
+                                    <figure>
+                                        <img src="images/home/ui-ux-gallary-4.png" alt="img">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="marking" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/market-gallary-1.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-66">
+                                    <figure>
+                                        <img src="images/home/market-gallary-2.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-66">
+                                    <figure>
+                                        <img src="images/home/market-gallary-3.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/market-gallary-4.png" alt="img">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="seo" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/seo-gallary-4.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/seo-gallary-5.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/seo-gallary-6.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-66">
+                                    <figure>
+                                        <img src="images/home/seo-gallary-7.png" alt="img">
+                                    </figure>
+                                </div>
+
+                                <div class="w-33">
+                                    <figure>
+                                        <img src="images/home/seo-gallary-8.png" alt="img">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary-hr flex flex-end gap-1 mt-15">
+                        <h6>Creative Solution</h6>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+
+        <div class="service">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="flex gap-1">
+                                <hr class="service_hr1">
+                                <h5>SERVICES</h5>
+                            </div>
+                            <h2 class="mt-15">Services We offer</h2>
+                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat modi illo
+                                at cupiditate vitae, quis provident et labore!</p>
+                        </div>
+                        <div class="w-33 mt-15 flex flex-end">
+                            <a href="/" class="btn_hover2">View All Services</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="flex s-card gap-1">
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="images/icon/slider1.png" alt="slider1"></figure>
+                            <h3>UI/UX Design</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quia voluptatem
+                                impedit nulla pariatur similique dicta error aliquam!</p>
+                            <a href="/">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-up">
+                            <figure><img src="images/icon/slider2.png" alt="slider2"></figure>
+                            <h3>Development</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quia voluptatem
+                                impedit nulla pariatur similique dicta error aliquam!</p>
+                            <a href="/">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="images/icon/slider3.png" alt="slider3"></figure>
+                            <h3>Visual Design</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quia voluptatem
+                                impedit nulla pariatur similique dicta error aliquam!</p>
+                            <a href="/">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="experience">
+            <div class="container">
+                <div class="flex flex-wrap exp-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="exp-hr1 m-0">
+                            <h5>Experience</h5>
+                        </div>
+                        <h2>Grow your online presence.</h2>
+                        <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                            accusamus quo explicabo! Mollitia, doloremque ullam.</p>
+                    </div>
+                    <div class="w-33 mt-3 flex flex-end">
+                        <a href="/" class="btn_hover1">Get Started</a>
+                    </div>
+                    <div class="flex flex-sb">
+                        <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                            <div class="experience_mask">
+                                <figure><img src="images/home/experience.png" alt=""></figure>
+                            </div>
+                            <div class="experience-hr flex gap-1">
+                                <hr>
+                                <h6>Our Expertise</h6>
+                            </div>
+                        </div>
+                        <div class="w-50 flex flex-col gap-20 mt-1">
+                            <div class="flex gap-1 ex-card" data-aos="fade-up">
+                                <div class="flex flex-center">
+                                    <h3>90</h3>
+                                    <h3>%</h3>
+                                </div>
+                                <div>
+                                    <h4>Creative Approach</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi exercitationem
+                                        qui beatae soluta reprehenderit.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="flex flex-center">
+                                    <h3>99</h3>
+                                    <h3>%</h3>
+                                </div>
+                                <div>
+                                    <h4>Guaranteed Success</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi exercitationem
+                                        qui beatae soluta reprehenderit.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                                <div class="flex flex-center">
+                                    <h3>85</h3>
+                                    <h3>%</h3>
+                                </div>
+                                <div>
+                                    <h4>Brand Strategy</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi exercitationem
+                                        qui beatae soluta reprehenderit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container p-relative">
+                <div class="work-para text-center" data-aos="fade-up">
+                    <h5>HOW WE WORK</h5>
+                    <h2 class="mt-15">Our Process for Delivering Results</h2>
+                    <p class="mt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolor alias illum
+                        facere consequuntur quas!</p>
+
+                </div>
+                <div class="work-hr flex gap-1">
+                    <hr>
+                    <h6>Project in steps</h6>
+                </div>
+                <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+                    <div data-aos="zoom-in">
+                        <h2>01.</h2>
+                        <h4>Make an appointment</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>02.</h2>
+                        <h4>Meet Our Team</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>03.</h2>
+                        <h4>Get Consultation</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>04.</h2>
+                        <h4>Start Project</h4>
+                    </div>
+                </div>
+                <div class="flex flex-center" data-aos="zoom-in">
+                    <a href="/" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <div class="flex team-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="team-hr1">
+                            <h5>Our Team</h5>
+
+                        </div>
+                        <h2 class="mt-1">Meet Our Team Of Professionals</h2>
+                        <p class="mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni minus reiciendis
+                            quis expedita ipsa eius quisquam aut animi?</p>
+                    </div>
+                    <div class="w-33 mt-15 flex flex-end">
+                        <a href="/" class="btn_hover2">All Members</a>
+                    </div>
+                </div>
+                <div class="team-slider flex mt-15" data-aos="fade-right" data-aos-delay="400">
+                    <div class="team-img">
+                        <img src="images/slider/team-slider1.png" alt="avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jane Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-img">
+                        <img src="images/slider/team-slider2.png" alt="avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Katti Pairi</h3>
+                                <h4>Seo Expert</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-img">
+                        <img src="images/slider/team-slider3.png" alt="avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonny Coll</h3>
+                                <h4>Developer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-img">
+                        <img src="images/slider/team-slider4.png" alt="avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Anni Deo</h3>
+                                <h4>Ui / Ux</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-img">
+                        <img src="images/slider/team-slider1.png" alt="avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jane Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-img">
+                        <img src="images/slider/team-slider2.png" alt="avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Katti Pairi</h3>
+                                <h4>Seo Expert</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-btn" data-aos="zoom-in">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h4>Ask A Question To Our Amazing Team, And Get, Response Quickly.</h4>
+                    <a href="/" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing p-relative">
+            <span></span>
+            <div class="pricing-hr flex gap-1 mt-3">
+                <hr>
+                <h6>Pricing Plans</h6>
+            </div>
+            <div class="container">
+                <div class="text-center" data-aos="fade-down">
+                    <h5>PRICING</h5>
+                    <h2 class="mt-1">Pricing Plans</h2>
+                    <p class="mt-1 mb-15">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet
+                        molestias repudiandae incidunt similique error, ab quo voluptatum?</p>
+                </div>
+                <div class="pricing-card flex gap-1 mt-3 text-center">
+                    <div class="flex flex-col gap-1" data-aos="fade-up">
+                        <h3>BASIC</h3>
+                        <h2>#24</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="/" class="btn_hover1">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-1" data-aos="fade-down">
+                        <h3>STANDARD</h3>
+                        <h2>#594</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="/" class="btn_hover1">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-1" data-aos="fade-up">
+                        <h3>PREMIUM</h3>
+                        <h2>#99</h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6>
+                        <a href="/" class="btn_hover1">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq p-relative">
+            <span></span>
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-50 text-center" data-aos="fade-up">
+                        <div class="flex gap-1">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+
+                        </div>
+                        <h2 class="mt-1">Frequently Asked Questions</h2>
+                        <p class="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium magnam,
+                            sequi ex reprehenderit nesciunt fugit? Amet saepe totam rerum expedita.</p>
+                    </div>
+                    <div class="w-50 mt-15">
+                        <div class="accordion flex flex-col gap-1" id="accordionExample" data-aos="fade-down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        WHAT KING OF DIGITAL SERVICES DO YOU PROVIDE?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet iure, accusamus pariatur debitis deleniti aliquid placeat omnis dolore rerum dignissimos?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        WHAT IS YOUR PROCESS FOR WORKING WITH CLIENTS?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet iure, accusamus pariatur debitis deleniti aliquid placeat omnis dolore rerum dignissimos?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        WHAT IS YOUR TIMELINE FOR COMPLETING A PROJECT?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet iure, accusamus pariatur debitis deleniti aliquid placeat omnis dolore rerum dignissimos?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        WHAT IF I'M NOT SATISFIED WITH THE WORK?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet iure, accusamus pariatur debitis deleniti aliquid placeat omnis dolore rerum dignissimos?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="flex blog-center">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                          <hr class="blog-hr1">
+                          <h5>BLOGS</h5>  
+                        </div>
+                        <h2 class="mt-1">Latest Posts</h2>
+                        <p class="mt-1 mb-15">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt labore consequuntur eaque doloribus? Ratione qui nesciunt consequatur non!</p>
+                    </div>
+                    <div class="w-33 mt-1 flex flex-end">
+                        <a href="/" class="btn_hover2">See all blogs</a>
+                    </div>
+                </div>
+                <div class="flex gap-1 mt-15 blog-cards">
+                   <div class="blog-card w-100" data-aos="fade-up">
+                    <img src="images/home/blog1.png" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h4>10 Must-Know Digital Marketing Trends In 2024</h4>
+                        <a href="#">Learn More</a>
+                    </div>
+                   </div>
+
+                   <div class="blog-card w-100"  data-aos="fade-down">
+                    <img src="images/home/blog2.png" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h4>The Importance of Responsive Web Design For Your Business</h4>
+                        <a href="#">Learn More</a>
+                    </div>
+                   </div>
+
+                   <div class="blog-card w-100"  data-aos="fade-up">
+                    <img src="images/home/blog3.png" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h4>How To Create A Successful Social Media Strategy</h4>
+                        <a href="#">Learn More</a>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-hr flex flex-col">
+                    <div class="flex gap-1"  data-aos="fade-left">
+                        <hr>
+                        <h6>Newsletter</h6>
+                    </div>
+                    <h3>JOIN OUR MAILING LIST</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim hic illo nisi delectus quisquam nulla quae praesentium?</p>
+                </div>
+                <form action="#" id="footer-form" class="flex flex-sb gap-2"  data-aos="zoom-in" data-aos-delay="400">
+                <div id="footer-message"></div>
+                <input type="email" required placeholder="Enter your mail">
+                <button type="submit" class="btn_hover1">Get Started</button>
+                </form>
+            </div>
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="flex flex-start footer-center">
+                        <div class="w-33 flex flex-col gap-2 flex-start">
+                            <a href="/"><img src="images/logo.png" alt="footer-logo"></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa blanditiis ipsam expedita ipsum doloremque eos neque obcaecati.</p>
+                            <span class="flex gap-20">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-finstagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </span>
+                        </div>
+                        <div class="w-16 mt-1">
+                            <h4>Quick Links</h4>
+                            <ul class="flex flex-col gap-20 flex-start">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-16 mt-45 flex-end">
+                            <ul class="flex flex-col gap-20 flex-start">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-33 mt-1 flex flex-col flex-start">
+                            <h4>Get Connected</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                                    <a href="#" class="text-lowercase">paromita@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                                    <a href="#">+123-456-7890</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-sharp fa-regular fa-clock"></i></a>
+                                    <a href="#">Office Hours: 8AM - 11PM
+                                        Sunday - Weekend Day
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container flex flex-sb gap-20 flex-wrap">
+                    <h6>Copyright &copy; 2024 Coded By <a href="/" class="p-0">Coder mak</a></h6>
+                    <h6>Powered By <b>Coder Mak</b></h6>
+                </div>
+            </div>
+        </footer>       
+    </div>
+
+   
+
+
+<button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scroll animation lib -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
